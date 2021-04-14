@@ -110,7 +110,7 @@ body .menu-btn.open .menu-btn_burger::after {
 body .sidebar {
   font-size: 1.3rem;
   font-weight: 600;
-  position: fixed;
+  background: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -118,6 +118,8 @@ body .sidebar {
   height: 100vh;
   -webkit-box-shadow: 10px 20px 15px 5px rgba(0, 0, 0, 0.1);
           box-shadow: 10px 20px 15px 5px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  z-index: 5;
   left: -100%;
   -webkit-transition: 900ms;
   transition: 900ms;
@@ -147,5 +149,31 @@ body .open {
   left: 0;
   -webkit-transition: 500ms;
   transition: 500ms;
+}
+
+body .landing-page {
+  margin-top: 100px;
+}
+
+body .landing-page .landing-text {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #614e51;
+  margin: 40px auto;
+  width: 40vh;
+}
+
+body .landing-page .landing-button {
+  width: 30vh;
+  height: 40px;
+  font-size: 1.5rem;
+  font-weight: 100;
+  text-align: center;
+  margin: 0 25% 0 25%;
+  background-color: #ec3e61;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,4 +1,6 @@
-import React , {useState}from 'react'
+import React , {useState}from 'react';
+import {SideBarData} from './SideBarData';
+import {Link} from 'react-router-dom';
 
 
 
@@ -10,14 +12,25 @@ function Navbar() {
    
     return (
         <>
-        <div className="Navbar">
+        <div className="navbar">
             <div className={`menu-btn ${menuOpen ? "open" : ""}`} onClick={() => setmenuOpen(!menuOpen)}>
                 <div className="menu-btn_burger"></div>
             </div>
+            <h3 className="logo">Sweet Home</h3>
+            <span></span>
         </div>
-        <nav className={`sideber ${menuOpen ? "open" : ""}`} >
+        <nav className={`sidebar ${menuOpen ? "open" : ""}`} >
             <ul className='sidebar-items'>
-                
+                {SideBarData.map((item, index) => {
+                    return (
+                        <li key={index} className={item.cName}>
+                            <Link to={item.path}>
+                                {item.icon}
+                                <span className="sidebar-title">{item.title}</span>
+                            </Link>
+                        </li>
+                    )
+                })}
             </ul>
         </nav>
         </>

@@ -1,8 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 * {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body .navbar {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .navbar .logo {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #f36f89;
 }
 
 body .menu-btn {
@@ -84,5 +105,47 @@ body .menu-btn.open .menu-btn_burger::before {
 body .menu-btn.open .menu-btn_burger::after {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+
+body .sidebar {
+  font-size: 1.3rem;
+  font-weight: 600;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 250px;
+  height: 100vh;
+  -webkit-box-shadow: 10px 20px 15px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 10px 20px 15px 5px rgba(0, 0, 0, 0.1);
+  left: -100%;
+  -webkit-transition: 900ms;
+  transition: 900ms;
+}
+
+body .sidebar li {
+  list-style: none;
+  margin: 30px 0px 0px 30px;
+}
+
+body .sidebar li a {
+  text-decoration: none;
+  color: #f36f89;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .sidebar li .sidebar-title {
+  padding-left: 10px;
+}
+
+body .open {
+  left: 0;
+  -webkit-transition: 500ms;
+  transition: 500ms;
 }
 /*# sourceMappingURL=main.css.map */

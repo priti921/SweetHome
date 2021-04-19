@@ -179,4 +179,11 @@ body .landing-page .landing-button button {
   border: none;
   border-radius: 20px;
 }
+
+body .landing-page .left-svg {
+  position: absolute;
+  left: 0;
+  top: 10%;
+  height: 40%;
+}
 /*# sourceMappingURL=main.css.map */

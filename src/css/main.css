@@ -8,7 +8,7 @@
 }
 
 body .navbar {
-  height: 50px;
+  height: 3em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,6 +116,7 @@ body .sidebar {
   display: flex;
   width: 250px;
   height: 100vh;
+  border-top-right-radius: 30px;
   -webkit-box-shadow: 10px 20px 15px 5px rgba(0, 0, 0, 0.1);
           box-shadow: 10px 20px 15px 5px rgba(0, 0, 0, 0.1);
   position: absolute;
@@ -165,12 +166,14 @@ body .landing-page .landing-text {
 }
 
 body .landing-page .landing-button {
+  text-align: center;
+}
+
+body .landing-page .landing-button button {
   width: 30vh;
   height: 40px;
   font-size: 1.5rem;
   font-weight: 100;
-  text-align: center;
-  margin: 0 25% 0 25%;
   background-color: #ec3e61;
   color: #fff;
   border: none;

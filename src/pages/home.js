@@ -4,7 +4,11 @@ function home() {
     return (
         <div className="landing-page">
             <p className="landing-text">Homemade cakes to order</p>
-            <button className="landing-button">choose a cake</button>
+            
+
+            <div className="landing-button" >
+                <button >choose a cake</button>
+             </div>
         </div>
     )
 }

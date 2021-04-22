@@ -156,6 +156,11 @@ body .landing-page {
   margin-top: 100px;
 }
 
+body .landing-page .landing-page-details {
+  position: relative;
+  z-index: 1;
+}
+
 body .landing-page .landing-text {
   text-align: center;
   font-size: 2rem;
@@ -185,5 +190,14 @@ body .landing-page .left-svg {
   left: 0;
   top: 10%;
   height: 40%;
+}
+
+body .landing-page .right-svg {
+  position: absolute;
+  right: 0;
+  top: 45%;
+  width: 105%;
+  height: 56%;
+  z-index: 0;
 }
 /*# sourceMappingURL=main.css.map */

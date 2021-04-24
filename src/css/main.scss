@@ -4,10 +4,10 @@
     box-sizing: border-box;
     @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
     font-family: 'Quicksand', sans-serif;
+    
 }
 
 body{
-    
     
     // NAVBAR
     .navbar { 
@@ -15,6 +15,8 @@ body{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.05);
+        background-color: #fff;
         
 
             .logo{
@@ -96,8 +98,8 @@ body{
         display: flex;
         width: 250px;
         height: 100vh;
-        border-top-right-radius: 30px;
-        box-shadow: 10px 20px 15px 5px rgba(0,0,0,0.1);
+        // border-top-right-radius: 30px;
+        box-shadow: 25px 20px 15px 5px rgba(0,0,0,0.1);
 
         position: absolute;
         z-index: 5;
@@ -133,7 +135,7 @@ body{
         margin-top: 100px;
         .landing-page-details{
             position: relative;
-            z-index: 1;
+            // z-index: 0;
         }
         .landing-text {
             text-align: center;
@@ -159,20 +161,56 @@ body{
             }
         }
 
-        .left-svg{
-            position: absolute;
-            left: 0;
-            top: 10%;
-            height: 40%;
-            // width: 10%;
+        
+
+        
+    }
+
+    //svgs
+    .left-svg{
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        top: 10%;
+        height: 40%;
+        // width: 10%;
+    }
+    .right-svg{
+        position: absolute;
+        right: 0%;
+        top: 45%;
+        height: 56%;
+        z-index: -1;
+    }
+
+    .landing-page-cake-cards{
+        position: relative;
+        z-index: 0;
+        top: 25em;
+        display: grid;
+        
+        .cake-card{ 
+            height: 20em;
+            width: 90vw;
+            margin: 1em auto;
+            text-align: center;
+            border-radius: 1em;
+            background-color: rgba(236, 236, 236, 0.7)
         }
-        .right-svg{
-            position: absolute;
-            right: 0;
-            top: 45%;
-            width: 105%;
-            height: 56%;
-            z-index: 0;
+    }
+
+    .cake-page{
+        .cake-page-title{
+            margin-top: 50px;
+            margin-bottom: -400px;
+            .cake-page-text{
+                text-align: center;
+                font-size: 2rem;
+                font-weight: 500;
+                color: #f36f89;
+                margin: 40px auto;
+                width: 40vh;
+            }
         }
     }
     

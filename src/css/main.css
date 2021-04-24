@@ -18,6 +18,9 @@ body .navbar {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.05);
+  background-color: #fff;
 }
 
 body .navbar .logo {
@@ -116,9 +119,8 @@ body .sidebar {
   display: flex;
   width: 250px;
   height: 100vh;
-  border-top-right-radius: 30px;
-  -webkit-box-shadow: 10px 20px 15px 5px rgba(0, 0, 0, 0.1);
-          box-shadow: 10px 20px 15px 5px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 25px 20px 15px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 25px 20px 15px 5px rgba(0, 0, 0, 0.1);
   position: absolute;
   z-index: 5;
   left: -100%;
@@ -158,7 +160,6 @@ body .landing-page {
 
 body .landing-page .landing-page-details {
   position: relative;
-  z-index: 1;
 }
 
 body .landing-page .landing-text {
@@ -185,19 +186,50 @@ body .landing-page .landing-button button {
   border-radius: 20px;
 }
 
-body .landing-page .left-svg {
+body .left-svg {
   position: absolute;
+  z-index: -1;
   left: 0;
   top: 10%;
   height: 40%;
 }
 
-body .landing-page .right-svg {
+body .right-svg {
   position: absolute;
-  right: 0;
+  right: 0%;
   top: 45%;
-  width: 105%;
   height: 56%;
+  z-index: -1;
+}
+
+body .landing-page-cake-cards {
+  position: relative;
   z-index: 0;
+  top: 25em;
+  display: -ms-grid;
+  display: grid;
+}
+
+body .landing-page-cake-cards .cake-card {
+  height: 20em;
+  width: 90vw;
+  margin: 1em auto;
+  text-align: center;
+  border-radius: 1em;
+  background-color: rgba(236, 236, 236, 0.7);
+}
+
+body .cake-page .cake-page-title {
+  margin-top: 50px;
+  margin-bottom: -400px;
+}
+
+body .cake-page .cake-page-title .cake-page-text {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #f36f89;
+  margin: 40px auto;
+  width: 40vh;
 }
 /*# sourceMappingURL=main.css.map */

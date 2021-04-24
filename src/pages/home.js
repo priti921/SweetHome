@@ -15,6 +15,14 @@ function home() {
 
              <img className="left-svg" src={leftSvg} alt="left-svg"></img>
              <img className="right-svg" src={rightSvg} alt="right-svg"></img>
+
+             <div className="landing-page-cake-cards">
+                    <div className="cake-card"></div>
+                    <div className="cake-card"></div>
+                    <div className="cake-card"></div>
+                    <div className="cake-card"></div>
+                    <div className="cake-card"></div>
+             </div>
         </div>
     )
 }

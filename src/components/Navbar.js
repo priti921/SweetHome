@@ -1,6 +1,7 @@
 import React , {useState}from 'react';
 import {SideBarData} from './SideBarData';
 import {Link} from 'react-router-dom';
+import Headroom from 'react-headroom';
 
 
 
@@ -11,7 +12,7 @@ function Navbar() {
 
    
     return (
-        <>
+        <Headroom>
         <div className="navbar">
             <div className={`menu-btn ${menuOpen ? "open" : ""}`} onClick={() => setmenuOpen(!menuOpen)}>
                 <div className="menu-btn_burger"></div>
@@ -24,7 +25,7 @@ function Navbar() {
                 {SideBarData.map((item, index) => {
                     return (
                         <li key={index} className={item.cName}>
-                            <Link to={item.path}>
+                            <Link to={item.path} onClick={() => setmenuOpen(!menuOpen)}>
                                 {item.icon}
                                 <span className="sidebar-title">{item.title}</span>
                             </Link>
@@ -33,7 +34,7 @@ function Navbar() {
                 })}
             </ul>
         </nav>
-        </>
+        </Headroom>
     )
 }
 

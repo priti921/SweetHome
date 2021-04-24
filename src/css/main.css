@@ -187,7 +187,7 @@ body .landing-page .landing-button button {
 }
 
 body .left-svg {
-  position: absolute;
+  position: fixed;
   z-index: -1;
   left: 0;
   top: 10%;
@@ -195,7 +195,7 @@ body .left-svg {
 }
 
 body .right-svg {
-  position: absolute;
+  position: fixed;
   right: 0%;
   top: 45%;
   height: 56%;

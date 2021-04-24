@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/SweetHome/static/css/main.0c83b37b.chunk.css",
+    "main.css": "/SweetHome/static/css/main.3895822b.chunk.css",
     "main.js": "/SweetHome/static/js/main.9b79bf78.chunk.js",
     "main.js.map": "/SweetHome/static/js/main.9b79bf78.chunk.js.map",
     "runtime-main.js": "/SweetHome/static/js/runtime-main.c7ae78b9.js",
@@ -10,7 +10,7 @@
     "static/js/3.1c480540.chunk.js": "/SweetHome/static/js/3.1c480540.chunk.js",
     "static/js/3.1c480540.chunk.js.map": "/SweetHome/static/js/3.1c480540.chunk.js.map",
     "index.html": "/SweetHome/index.html",
-    "static/css/main.0c83b37b.chunk.css.map": "/SweetHome/static/css/main.0c83b37b.chunk.css.map",
+    "static/css/main.3895822b.chunk.css.map": "/SweetHome/static/css/main.3895822b.chunk.css.map",
     "static/js/2.fe1b0a5d.chunk.js.LICENSE.txt": "/SweetHome/static/js/2.fe1b0a5d.chunk.js.LICENSE.txt",
     "static/media/LeftSvg.c80c2e76.svg": "/SweetHome/static/media/LeftSvg.c80c2e76.svg",
     "static/media/RightSvg.fc47dba1.svg": "/SweetHome/static/media/RightSvg.fc47dba1.svg",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.c7ae78b9.js",
     "static/js/2.fe1b0a5d.chunk.js",
-    "static/css/main.0c83b37b.chunk.css",
+    "static/css/main.3895822b.chunk.css",
     "static/js/main.9b79bf78.chunk.js"
   ]
 }

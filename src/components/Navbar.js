@@ -17,8 +17,13 @@ function Navbar() {
             <div className={`menu-btn ${menuOpen ? "open" : ""}`} onClick={() => setmenuOpen(!menuOpen)}>
                 <div className="menu-btn_burger"></div>
             </div>
-            <h3 className="logo">Sweet Home</h3>
-            <span></span>
+
+            <Link to='/'>
+                <h3 className="logo">Sweet Home</h3>
+            </Link>
+
+            <span></span>   {/*to align the logo in middle*/ }
+
         </div>
         <nav className={`sidebar ${menuOpen ? "open" : ""}`} >
             <ul className='sidebar-items'>

@@ -1,4 +1,5 @@
 import React from 'react'
+import Copyright from '../components/Copyright'
 import leftSvg from '../images/SVG/LeftSvg.svg'
 import rightSvg from '../images/SVG/RightSvg.svg'
 
@@ -22,6 +23,7 @@ function cakes() {
                     <div className="cake-card"></div>
                     <div className="cake-card"></div>
              </div>
+             <Copyright/>
         </div>
     )
 }

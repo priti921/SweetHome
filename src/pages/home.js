@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+import Copyright from '../components/Copyright';
 import leftSvg from '../images/SVG/LeftSvg.svg';
 import rightSvg from '../images/SVG/RightSvg2.svg';
 
@@ -6,10 +8,13 @@ function home() {
     return (
         <div className="landing-page">
             <div className="landing-page-details">
-                <p className="landing-text">Homemade cakes to order</p>
+                
+                    <p className="landing-text">Homemade cakes to order</p>
 
                 <div className="landing-button" >
-                    <button >choose a cake</button>
+                    <Link to='/cakes'>
+                        <button >choose a cake</button>
+                    </Link>
                 </div>
             </div>
 
@@ -23,6 +28,7 @@ function home() {
                     <div className="cake-card"></div>
                     <div className="cake-card"></div>
              </div>
+             <Copyright/>
         </div>
     )
 }

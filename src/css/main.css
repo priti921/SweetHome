@@ -237,6 +237,42 @@ body .cake-page .cake-page-title .cake-page-text {
   width: 40vh;
 }
 
+body .about-us .about-us-title {
+  margin-top: -10px;
+  margin-bottom: -380px;
+}
+
+body .about-us .about-us-title p {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #f36f89;
+  margin: 40px auto;
+  width: 40vh;
+}
+
+body .about-us .about-us-text-box {
+  position: relative;
+  z-index: 1;
+  top: 23em;
+  margin: auto;
+  height: 37em;
+  width: 95vw;
+  text-align: center;
+  border-radius: 1em;
+  background-color: rgba(236, 236, 236, 0.7);
+}
+
+body .about-us .about-us-text-box .about-us-text {
+  position: relative;
+  z-index: 2;
+  color: #614e51;
+  font-size: 1.1em;
+  font-weight: 400;
+  text-align: center;
+  padding: 10px;
+}
+
 body .copyright {
   height: 1.5em;
   margin-top: 390px;
